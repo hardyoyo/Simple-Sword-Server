@@ -8,7 +8,7 @@ import web, uuid, os, re, base64, hashlib, urllib, sys, logging, logging.config
 from lxml import etree
 from datetime import datetime
 from zipfile import ZipFile
-from web.wsgiserver import CherryPyWSGIServer
+import wsgiserver
 
 # SERVER CONFIGURATION
 #############################################################################

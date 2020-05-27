@@ -1,0 +1,10 @@
+---
+name: simple-sword-server
+services:
+  appserver:
+    type: python:2.7.9
+    ports:
+      - '8080:8080'
+    command: python /app/sss/sss-1.0.py
+    build:
+      - cd /app && pip install --upgrade pip && pip install web.py && pip install lxml && pip install wsgiserver && python setup.py build && python setup.py install
